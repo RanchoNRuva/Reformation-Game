@@ -5,6 +5,8 @@ WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("The Reformation")
 
+BG = pygame.image.load(os.path.join('assets', 'bg.png'))
+
 WHITE = (255, 255, 255)
 
 FPS = 60
@@ -19,7 +21,7 @@ GROUND_IMAGE = pygame.image.load(os.path.join('assets', 'ground.png'))
 
 
 def draw_window(luther, ground, ground1, ground2, ground3, ground4, ground5, ground6, ground7, ground8):
-    WIN.fill(WHITE)
+    WIN.blit(BG, (0, 0))
     WIN.blit(GROUND_IMAGE, (ground.x, ground.y))
     WIN.blit(GROUND_IMAGE, (ground1.x, ground1.y))
     WIN.blit(GROUND_IMAGE, (ground2.x, ground2.y))
