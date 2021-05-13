@@ -33,7 +33,7 @@ def main():
         ground.append(pygame.Rect((100 * i), 455, GROUND_HEIGHT, GROUND_WIDTH)
     clock = pygame.time.Clock()
     run = True
-    while run::
+    while run:
         clock.tick(FPS)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
